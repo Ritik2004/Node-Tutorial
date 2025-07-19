@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "first_name":"A",
+        "last_name":"wfm",
+        "email":"rasndom@gmail.com",
+        "gender":"male",
+        "job_title":"fkenfekgn"
+    },
+    {
+        "id":2,
+        "first_name":"b",
+        "last_name":"wfvev",
+        "email":"rasn@gmail.com",
+        "gender":"female",
+        "job_title":"fkenfewffkgn"
+    },
+    {
+         "id":3,
+        "first_name":"c",
+        "last_name":"vev",
+        "email":"rasnwdwf@gmail.com",
+        "gender":"poly",
+        "job_title":"fewffkgn"
+    }
+]
