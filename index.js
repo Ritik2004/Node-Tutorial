@@ -1,20 +1,17 @@
 const express = require('express');
 const users = require('./MOCK_DATA.json')
+const {connectDb} = require('./connection')
+const userRouter = require('./routes/user')
+
 const app = express();
 const PORT = 3000;
+connectDb()
+app.use(express.json())
 
-app.get('/api/users',(req,res)=>{
-     return res.json(users)
-})
 
-app.get('/api/users/:id',(req,res)=>{
-    const id = req.params.id;
-    const user = users.find((user)=>user.id == id)
-   return res.json(user)
-})
-app.post('api/users/',(req,res)=>{
-    
-})
+
+app.use("/api/users",userRouter);
+
 
 app.listen(PORT,()=>{
     console.log(`Server listening on port ${PORT}`)
