@@ -5,13 +5,16 @@ const userRouter = require('./routes/user')
 
 const app = express();
 const PORT = 3000;
-connectDb()
-app.use(express.json())
+// connectDb()
+// app.use(express.json())
 
 
 
-app.use("/api/users",userRouter);
+// app.use("/api/users",userRouter);
 
+app.get("/", (req,res)=>{
+    return res.json({message:`Hello from express ${process.pid}`})
+})
 
 app.listen(PORT,()=>{
     console.log(`Server listening on port ${PORT}`)
